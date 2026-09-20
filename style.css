@@ -1,0 +1,80 @@
+
+body {
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(
+        120deg,
+        rgb(157, 91, 157),
+        rgb(124, 124, 248),
+        rgb(157, 46, 148),
+        rgb(247, 104, 104),
+        rgb(44, 190, 44),
+       
+        aqua,
+        yellow,
+        brown
+    );
+    background-size: 500% 500%;
+    animation: gd 5s ease infinite;
+}
+
+@keyframes gd {
+    0%, 100% {
+        background-position: 100% 50%;
+    }
+
+    50% {
+        background-position: 0% 50%;
+    }
+}
+
+.container {
+    box-shadow: 0px 8px 32px black;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 20px;
+}
+
+td::before {
+    content: '❄️';
+}
+
+th::before {
+    content: '🔹';
+}
+
+tr:nth-child(odd) {
+    background-color: gold;
+}
+
+th {
+    background-color: hotpink;
+}
+
+td:hover {
+    font-style: italic;
+}
+
+td:hover {
+    transition: transform 2s ease;
+    transform: rotateX(360deg);   
+      transform: rotateY(360deg);     
+      transform: rotateZ(360deg);    
+       transform: scale(2);    
+        transform: translate(10px);    
+         transform: skew(50deg);
+    transform: perspective(30px) rotateY(360deg);
+}
+
